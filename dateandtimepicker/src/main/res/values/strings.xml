@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestDatePicker</string>
+    <string name="picker_am">AM</string>
+    <string name="picker_pm">PM</string>
+    <string name="picker_today">امروز</string>
+    <string name="date"> %1$s %2$s %3$s </string>
+    <string name="send_today_at"> امروز در ساعت %1$s ارسال می شود </string>
+    <string name="send_at"> %1$s در ساعت %2$s ارسال می شود </string>
+
+</resources>
