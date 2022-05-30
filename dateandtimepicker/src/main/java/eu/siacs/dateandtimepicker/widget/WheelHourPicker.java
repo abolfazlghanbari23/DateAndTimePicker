@@ -1,11 +1,10 @@
 package eu.siacs.dateandtimepicker.widget;
 
 
-
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.MAX_HOUR_AM_PM;
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.MAX_HOUR_DEFAULT;
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.MIN_HOUR_DEFAULT;
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.STEP_HOURS_DEFAULT;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.MAX_HOUR_AM_PM;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.MAX_HOUR_DEFAULT;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.MIN_HOUR_DEFAULT;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.STEP_HOURS_DEFAULT;
 
 import android.content.Context;
 import android.util.AttributeSet;

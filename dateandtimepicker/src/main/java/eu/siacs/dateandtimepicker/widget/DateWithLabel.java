@@ -3,7 +3,7 @@ package eu.siacs.dateandtimepicker.widget;
 
 import java.util.Date;
 
-import eu.siacs.testdatepicker.DateHelper;
+import eu.siacs.dateandtimepicker.DateHelper;
 
 public class DateWithLabel {
     public final String label;

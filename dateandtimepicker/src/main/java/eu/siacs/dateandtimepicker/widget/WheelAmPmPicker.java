@@ -11,7 +11,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import eu.siacs.testdatepicker.R;
+import eu.siacs.dateandtimepicker.R;
+
 
 public class WheelAmPmPicker extends WheelPicker<String> {
 

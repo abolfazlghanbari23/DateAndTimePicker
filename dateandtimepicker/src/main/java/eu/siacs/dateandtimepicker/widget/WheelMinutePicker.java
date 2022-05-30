@@ -1,10 +1,9 @@
 package eu.siacs.dateandtimepicker.widget;
 
 
-
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.MAX_MINUTES;
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.MIN_MINUTES;
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.STEP_MINUTES_DEFAULT;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.MAX_MINUTES;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.MIN_MINUTES;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.STEP_MINUTES_DEFAULT;
 
 import android.content.Context;
 import android.util.AttributeSet;

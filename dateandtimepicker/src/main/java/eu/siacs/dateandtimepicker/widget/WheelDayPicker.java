@@ -1,7 +1,7 @@
 package eu.siacs.dateandtimepicker.widget;
 
 
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.DAYS_PADDING;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.DAYS_PADDING;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -15,8 +15,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import eu.siacs.testdatepicker.R;
+import eu.siacs.dateandtimepicker.R;
 import saman.zamani.persiandate.PersianDate;
+
 
 public class WheelDayPicker extends WheelPicker<DateWithLabel> {
 

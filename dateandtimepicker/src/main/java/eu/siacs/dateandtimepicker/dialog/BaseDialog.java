@@ -1,7 +1,7 @@
 package eu.siacs.dateandtimepicker.dialog;
 
 
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.STEP_MINUTES_DEFAULT;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.STEP_MINUTES_DEFAULT;
 
 import android.graphics.Color;
 

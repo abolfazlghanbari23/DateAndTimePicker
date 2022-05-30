@@ -32,9 +32,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import eu.siacs.testdatepicker.DateHelper;
-import eu.siacs.testdatepicker.LocaleHelper;
-import eu.siacs.testdatepicker.R;
+import eu.siacs.dateandtimepicker.DateHelper;
+import eu.siacs.dateandtimepicker.LocaleHelper;
+import eu.siacs.dateandtimepicker.R;
+
 
 public abstract class WheelPicker<V> extends View {
 

@@ -1,7 +1,6 @@
 package eu.siacs.dateandtimepicker.dialog;
 
-
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.STEP_MINUTES_DEFAULT;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.STEP_MINUTES_DEFAULT;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -19,10 +18,10 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import eu.siacs.testdatepicker.DateHelper;
-import eu.siacs.testdatepicker.R;
-import eu.siacs.testdatepicker.SingleDateAndTimePicker;
-import eu.siacs.testdatepicker.widget.DateWithLabel;
+import eu.siacs.dateandtimepicker.DateHelper;
+import eu.siacs.dateandtimepicker.R;
+import eu.siacs.dateandtimepicker.SingleDateAndTimePicker;
+import eu.siacs.dateandtimepicker.widget.DateWithLabel;
 import saman.zamani.persiandate.PersianDate;
 
 public class SingleDateAndTimePickerDialog extends BaseDialog {
@@ -200,9 +199,10 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
                 if (DateHelper.compareDateIgnoreTime(date, dateHelper.today()) == 0) {
                     buttonOk.setText(view.getContext().getResources().getString(R.string.send_today_at, hour + ":" + minute));
                 } else {
-                    PersianDate persianDate=new PersianDate(date);
 
+                    PersianDate persianDate=new PersianDate(date);
                     buttonOk.setText(view.getContext().getResources().getString(R.string.send_at,persianDate.getShDay()+" "+persianDate.monthName()+" "+persianDate.getShYear() ,hour + ":" + minute));
+
                 }
             }
 

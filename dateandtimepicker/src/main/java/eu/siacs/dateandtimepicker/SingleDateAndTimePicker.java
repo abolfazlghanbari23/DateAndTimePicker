@@ -1,7 +1,7 @@
 package eu.siacs.dateandtimepicker;
 
 
-import static eu.siacs.testdatepicker.widget.SingleDateAndTimeConstants.DAYS_PADDING;
+import static eu.siacs.dateandtimepicker.widget.SingleDateAndTimeConstants.DAYS_PADDING;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -28,15 +28,15 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import eu.siacs.testdatepicker.widget.DateWithLabel;
-import eu.siacs.testdatepicker.widget.WheelAmPmPicker;
-import eu.siacs.testdatepicker.widget.WheelDayOfMonthPicker;
-import eu.siacs.testdatepicker.widget.WheelDayPicker;
-import eu.siacs.testdatepicker.widget.WheelHourPicker;
-import eu.siacs.testdatepicker.widget.WheelMinutePicker;
-import eu.siacs.testdatepicker.widget.WheelMonthPicker;
-import eu.siacs.testdatepicker.widget.WheelPicker;
-import eu.siacs.testdatepicker.widget.WheelYearPicker;
+import eu.siacs.dateandtimepicker.widget.DateWithLabel;
+import eu.siacs.dateandtimepicker.widget.WheelAmPmPicker;
+import eu.siacs.dateandtimepicker.widget.WheelDayOfMonthPicker;
+import eu.siacs.dateandtimepicker.widget.WheelDayPicker;
+import eu.siacs.dateandtimepicker.widget.WheelHourPicker;
+import eu.siacs.dateandtimepicker.widget.WheelMinutePicker;
+import eu.siacs.dateandtimepicker.widget.WheelMonthPicker;
+import eu.siacs.dateandtimepicker.widget.WheelPicker;
+import eu.siacs.dateandtimepicker.widget.WheelYearPicker;
 import saman.zamani.persiandate.PersianDate;
 
 
