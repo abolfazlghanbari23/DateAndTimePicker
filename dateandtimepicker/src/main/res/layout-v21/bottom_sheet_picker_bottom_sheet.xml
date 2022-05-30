@@ -21,38 +21,24 @@
             android:layout_height="50dp"
             >
 
+
             <TextView
                 android:id="@+id/sheetTitle"
-                android:minWidth="80dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="start|center_vertical"
-                android:gravity="center"
-                android:layout_marginLeft="12dp"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="title here"
-                android:textColor="@color/picker_button_background_selected"
-                android:textStyle="bold"
-                />
-
-
-            <TextView
-                android:id="@+id/buttonOk"
                 android:minWidth="80dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="end|center_vertical"
                 android:gravity="center"
                 android:background="?android:attr/selectableItemBackground"
-                android:text="@android:string/ok"
-                android:textAllCaps="true"
+                android:text="title here"
+                android:layout_marginRight="12dp"
                 android:textColor="@color/picker_button_background_selected"
                 android:textStyle="bold"
                 />
 
         </FrameLayout>
 
-        <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+        <eu.siacs.dateandtimepicker.SingleDateAndTimePicker
             android:id="@+id/picker"
             android:layout_width="match_parent"
             android:layout_height="230dp"
@@ -62,6 +48,19 @@
             app:picker_selectedTextColor="@color/picker_button_background_selected"
             app:picker_textSize="20sp"
             app:picker_visibleItemCount="7"
+            />
+        <Button
+            android:id="@+id/buttonOk"
+            android:minWidth="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@android:string/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/picker_button_background_selected"
+            android:textStyle="bold"
             />
 
     </LinearLayout>

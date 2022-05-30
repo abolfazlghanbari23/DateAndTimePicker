@@ -13,14 +13,14 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelDayPicker
+        <eu.siacs.dateandtimepicker.widget.WheelDayPicker
             android:id="@+id/daysPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             app:wheel_atmospheric="true"
             app:wheel_item_align="right" />
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelDayOfMonthPicker
+        <eu.siacs.dateandtimepicker.widget.WheelDayOfMonthPicker
             android:id="@+id/daysOfMonthPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -29,7 +29,7 @@
             app:wheel_atmospheric="true"
             app:wheel_item_align="right" />
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelMonthPicker
+        <eu.siacs.dateandtimepicker.widget.WheelMonthPicker
             android:id="@+id/monthPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -38,7 +38,7 @@
             app:wheel_atmospheric="true"
             app:wheel_item_align="right" />
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelYearPicker
+        <eu.siacs.dateandtimepicker.widget.WheelYearPicker
             android:id="@+id/yearPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -47,7 +47,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"/>
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelHourPicker
+        <eu.siacs.dateandtimepicker.widget.WheelHourPicker
             android:id="@+id/hoursPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -56,14 +56,14 @@
             app:wheel_atmospheric="true"
             app:wheel_item_align="center" />
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelMinutePicker
+        <eu.siacs.dateandtimepicker.widget.WheelMinutePicker
             android:id="@+id/minutesPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             app:wheel_atmospheric="true"
             app:wheel_item_align="center" />
 
-        <com.github.florent37.singledateandtimepicker.widget.WheelAmPmPicker
+        <eu.siacs.dateandtimepicker.widget.WheelAmPmPicker
             android:id="@+id/amPmPicker"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -100,6 +100,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/picker_default_divider_height"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/picker_default_divider"/>
+            android:background="@drawable/picker_default_divider" />
     </RelativeLayout>
 </FrameLayout>
