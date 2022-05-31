@@ -30,7 +30,7 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
     private Listener listener;
     private BottomSheetHelper bottomSheetHelper;
     private SingleDateAndTimePicker picker;
-    Typeface typeface =null;
+    Typeface typeface = null;
     @Nullable
     private String title;
     @Nullable
@@ -76,9 +76,14 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
 
 
     private void init(View view) {
+
+
+
+
+
         picker = (SingleDateAndTimePicker) view.findViewById(R.id.picker);
         picker.setDateHelper(dateHelper);
-         typeface = Typeface.createFromAsset(view.getContext().getAssets(), "fonts/IRANSansMobile(FaNum).ttf");
+        typeface = Typeface.createFromAsset(view.getContext().getAssets(), "fonts/IRANSansMobile(FaNum).ttf");
         if (picker != null) {
             if (bottomSheetHeight != null) {
                 ViewGroup.LayoutParams params = picker.getLayoutParams();
@@ -190,22 +195,19 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
 
         buttonOk.setTypeface(typeface);
 
-        picker.addOnDateChangedListener(new SingleDateAndTimePicker.OnDateChangedListener() {
-            @Override
-            public void onDateChanged(String displayed, Date date) {
-                String  hour=dateHelper.getHour(date, true)<10 ? "0"+dateHelper.getHour(date, true) : dateHelper.getHour(date, true)+"";
-                String  minute=dateHelper.getMinuteOf(date)<10 ? "0"+dateHelper.getMinuteOf(date) : dateHelper.getMinuteOf(date)+"";
 
-                if (DateHelper.compareDateIgnoreTime(date, dateHelper.today()) == 0) {
-                    buttonOk.setText(view.getContext().getResources().getString(R.string.send_today_at, hour + ":" + minute));
-                } else {
+        picker.addOnDateChangedListener((displayed, date) -> {
+            String hour = dateHelper.getHour(date, true) < 10 ? "0" + dateHelper.getHour(date, true) : dateHelper.getHour(date, true) + "";
+            String minute = dateHelper.getMinuteOf(date) < 10 ? "0" + dateHelper.getMinuteOf(date) : dateHelper.getMinuteOf(date) + "";
 
-                    PersianDate persianDate=new PersianDate(date);
-                    buttonOk.setText(view.getContext().getResources().getString(R.string.send_at,persianDate.getShDay()+" "+persianDate.monthName()+" "+persianDate.getShYear() ,hour + ":" + minute));
+            if (DateHelper.compareDateIgnoreTime(date, dateHelper.today()) == 0) {
+                buttonOk.setText(view.getContext().getResources().getString(R.string.send_today_at, hour + ":" + minute));
+            } else {
 
-                }
+                PersianDate persianDate = new PersianDate(date);
+                buttonOk.setText(view.getContext().getResources().getString(R.string.send_at, persianDate.getShDay() + " " + persianDate.monthName() + " " + persianDate.getShYear(), hour + ":" + minute));
+
             }
-
         });
     }
 

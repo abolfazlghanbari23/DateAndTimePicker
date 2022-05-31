@@ -43,6 +43,9 @@ class MainActivity : AppCompatActivity() {
 
 
             .listener { date ->
+
+                Log.i("havij",date.time.toString())
+                Log.i("havij",System.currentTimeMillis().toString())
                 Toast.makeText(this,date.toString(), Toast.LENGTH_LONG).show()
                 Log.i("mehdi",date.time.toString())
             }
