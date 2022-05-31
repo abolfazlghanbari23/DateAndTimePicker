@@ -58,6 +58,7 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
             @Override
             public void onLoaded(View view) {
                 init(view);
+
                 if (displayListener != null) {
                     displayListener.onDisplayed(picker);
                 }
@@ -194,7 +195,17 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
         picker.setDisplayHours(displayHours);
 
         buttonOk.setTypeface(typeface);
+        Date date1=new Date();
+        String hour1 = dateHelper.getHour(date1, true) < 10 ? "0" + dateHelper.getHour(date1, true) : dateHelper.getHour(date1, true) + "";
+        String minute1 = dateHelper.getMinuteOf(date1) < 10 ? "0" + dateHelper.getMinuteOf(date1) : dateHelper.getMinuteOf(date1) + "";
+        if (DateHelper.compareDateIgnoreTime(date1, dateHelper.today()) == 0) {
+            buttonOk.setText(view.getContext().getResources().getString(R.string.send_today_at, hour1 + ":" + minute1));
+        } else {
 
+            PersianDate persianDate = new PersianDate(date1);
+            buttonOk.setText(view.getContext().getResources().getString(R.string.send_at, persianDate.getShDay() + " " + persianDate.monthName() + " " + persianDate.getShYear(), hour1 + ":" + minute1));
+
+        }
 
         picker.addOnDateChangedListener((displayed, date) -> {
             String hour = dateHelper.getHour(date, true) < 10 ? "0" + dateHelper.getHour(date, true) : dateHelper.getHour(date, true) + "";

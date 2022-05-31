@@ -1,10 +1,12 @@
 package eu.siacs.dateandtimepicker
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import eu.siacs.dateandtimepicker.dialog.SingleDateAndTimePickerDialog
+import java.security.AccessController.getContext
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,9 +38,10 @@ class MainActivity : AppCompatActivity() {
             .mustBeOnFuture()
             .minutesStep(1)
             .displayAmPm(false)
-            //.defaultDate(defaultDate)
-//             .minDateRange(today)
-//             .maxDateRange(nextYear)
+//            .backgroundColor(Color.WHITE)
+//            .mainColor(Color.BLACK)
+//            .titleTextColor(Color.GREEN)
+
             .title("پیام زمانبندی")
 
 
